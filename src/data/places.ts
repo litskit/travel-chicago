@@ -10,7 +10,8 @@ export const places: Place[] = [
     "lng": -87.6233,
     "description": "Iconic mirrored sculpture in Millennium Park that reflects the Chicago skyline.",
     "address": "201 E Randolph St, Chicago, IL 60601",
-    "tags": ["photo-spot", "free", "public-art"]
+    "tags": ["photo-spot", "free", "public-art"],
+    "recommended": true
   },
   {
     "id": "willis-tower-skydeck",
@@ -30,7 +31,8 @@ export const places: Place[] = [
     "lng": -87.6080,
     "description": "Historic pier on Lake Michigan with rides, shops, restaurants, and the Centennial Wheel.",
     "address": "600 E Grand Ave, Chicago, IL 60611",
-    "tags": ["family", "lakefront", "entertainment"]
+    "tags": ["family", "lakefront", "entertainment"],
+    "recommended": true
   },
   {
     "id": "buckingham-fountain",
@@ -40,7 +42,8 @@ export const places: Place[] = [
     "lng": -87.6189,
     "description": "Landmark fountain in Grant Park known for its evening light and water shows.",
     "address": "301 S Columbus Dr, Chicago, IL 60605",
-    "tags": ["free", "photo-spot", "evening"]
+    "tags": ["free", "photo-spot", "evening"],
+    "recommended": true
   },
   {
     "id": "chicago-riverwalk",
@@ -50,7 +53,8 @@ export const places: Place[] = [
     "lng": -87.6215,
     "description": "Scenic pedestrian path along the Chicago River with restaurants, bars, and skyline views.",
     "address": "Chicago Riverwalk, Chicago, IL",
-    "tags": ["free", "walk", "views"]
+    "tags": ["free", "walk", "views"],
+    "recommended": true
   },
   {
     "id": "wrigley-field",
@@ -120,7 +124,8 @@ export const places: Place[] = [
     "lng": -87.6301,
     "description": "Untitled monumental sculpture by Pablo Picasso in the heart of the Loop.",
     "address": "50 W Washington St, Chicago, IL 60602",
-    "tags": ["public-art", "free"]
+    "tags": ["public-art", "free"],
+    "recommended": true
   },
   {
     "id": "water-tower",
@@ -140,7 +145,8 @@ export const places: Place[] = [
     "lng": -87.6237,
     "description": "Interactive public art installation with dual towers displaying faces of Chicagoans and cascading water.",
     "address": "Millennium Park, Chicago, IL 60601",
-    "tags": ["public-art", "free", "family"]
+    "tags": ["public-art", "free", "family"],
+    "recommended": true
   },
   {
     "id": "pritzker-pavilion",
@@ -220,7 +226,8 @@ export const places: Place[] = [
     "lng": -87.6247,
     "description": "Free cultural venue famous for the world’s largest Tiffany glass dome.",
     "address": "78 E Washington St, Chicago, IL 60602",
-    "tags": ["free", "architecture", "art"]
+    "tags": ["free", "architecture", "art"],
+    "recommended": true
   },
   {
     "id": "dusable-museum",
@@ -240,7 +247,8 @@ export const places: Place[] = [
     "lng": -87.6315,
     "description": "Museum exploring the history of Chicago through artifacts and exhibits.",
     "address": "1601 N Clark St, Chicago, IL 60614",
-    "tags": ["history", "local"]
+    "tags": ["history", "local"],
+    "recommended": true
   },
   {
     "id": "notebaert-nature-museum",
@@ -540,7 +548,8 @@ export const places: Place[] = [
     "lng": -87.6226,
     "description": "Iconic downtown park featuring Cloud Gate, Crown Fountain, and Lurie Garden.",
     "address": "201 E Randolph St, Chicago, IL 60601",
-    "tags": ["free", "iconic", "public-art"]
+    "tags": ["free", "iconic", "public-art"],
+    "recommended": true
   },
   {
     "id": "grant-park",
@@ -730,7 +739,8 @@ export const places: Place[] = [
     "lng": -87.6405,
     "description": "Indoor market with food vendors and specialty goods near Ogilvie Station.",
     "address": "131 N Clinton St, Chicago, IL 60661",
-    "tags": ["market", "food"]
+    "tags": ["market", "food"],
+    "recommended": true
   },
   {
     "id": "navy-pier-shops",
@@ -974,12 +984,501 @@ export const places: Place[] = [
   },
   {
     "id": "festivals",
-    "name": "Seasonal Festivals",
+    "name": "Seasonal Festivals ⭐",
     "category": "entertainment",
     "lat": 41.8800,
     "lng": -87.6200,
     "description": "Major events including Taste of Chicago, Blues Festival, Jazz Festival, and Lollapalooza.",
     "address": "Various parks and venues, Chicago, IL",
     "tags": ["festival", "seasonal", "music"]
+  },
+  {
+    "id": "magnificent-mile",
+    "name": "Magnificent Mile",
+    "category": "shopping",
+    "lat": 41.8948,
+    "lng": -87.6242,
+    "description": "Premier shopping and dining corridor along Michigan Avenue with luxury stores, landmarks, and hotels.",
+    "address": "N Michigan Ave, Chicago, IL 60611",
+    "tags": ["shopping", "iconic", "neighborhood"],
+    "recommended": true
+  },
+  {
+    "id": "the-loop",
+    "name": "The Loop",
+    "category": "landmark",
+    "lat": 41.8819,
+    "lng": -87.6278,
+    "description": "Downtown business and cultural core of Chicago, home to major architecture, theaters, and transit hubs.",
+    "address": "The Loop, Chicago, IL",
+    "tags": ["downtown", "architecture", "neighborhood"]
+  },
+  {
+    "id": "chinatown",
+    "name": "Chinatown",
+    "category": "food",
+    "lat": 41.8512,
+    "lng": -87.6344,
+    "description": "Vibrant Chinese neighborhood with restaurants, markets, the Chinatown Gate, and Ping Tom Memorial Park.",
+    "address": "Chinatown, Chicago, IL 60616",
+    "tags": ["chinese", "food", "neighborhood"],
+    "recommended": true
+  },
+  {
+    "id": "pilsen-little-village",
+    "name": "Pilsen / Little Village",
+    "category": "food",
+    "lat": 41.8570,
+    "lng": -87.6619,
+    "description": "Mexican cultural heart of Chicago featuring street art, murals, authentic food, and the National Museum of Mexican Art.",
+    "address": "Pilsen & Little Village, Chicago, IL",
+    "tags": ["mexican", "street-art", "neighborhood"],
+    "recommended": true
+  },
+  {
+    "id": "logan-square",
+    "name": "Logan Square",
+    "category": "food",
+    "lat": 41.9231,
+    "lng": -87.7093,
+    "description": "Trendy neighborhood with boulevard parks, craft beer, restaurants, and a strong arts and music scene.",
+    "address": "Logan Square, Chicago, IL",
+    "tags": ["trendy", "food", "neighborhood"]
+  },
+  {
+    "id": "wicker-park",
+    "name": "Wicker Park",
+    "category": "shopping",
+    "lat": 41.9088,
+    "lng": -87.6796,
+    "description": "Hip neighborhood known for indie shops, murals, nightlife, restaurants, and The 606 trail access.",
+    "address": "Wicker Park, Chicago, IL 60622",
+    "tags": ["indie", "nightlife", "neighborhood"]
+  },
+  {
+    "id": "andersonville",
+    "name": "Andersonville",
+    "category": "shopping",
+    "lat": 41.9800,
+    "lng": -87.6685,
+    "description": "Charming Swedish-influenced neighborhood with independent shops, restaurants, and LGBTQ+-friendly vibe.",
+    "address": "Andersonville, Chicago, IL 60640",
+    "tags": ["swedish", "indie", "neighborhood"]
+  },
+  {
+    "id": "bronzeville",
+    "name": "Bronzeville",
+    "category": "landmark",
+    "lat": 41.8250,
+    "lng": -87.6170,
+    "description": "Historic African American neighborhood with rich cultural heritage, jazz history, and landmarks.",
+    "address": "Bronzeville, Chicago, IL",
+    "tags": ["african-american", "history", "neighborhood"]
+  },
+  {
+    "id": "argyle-street",
+    "name": "Argyle Street (Uptown)",
+    "category": "food",
+    "lat": 41.9730,
+    "lng": -87.6580,
+    "description": "Southeast Asian (Chinese & Vietnamese) enclave known for authentic food and the Argyle Night Market.",
+    "address": "Argyle St, Uptown, Chicago, IL",
+    "tags": ["vietnamese", "chinese", "night-market", "neighborhood"],
+    "recommended": true
+  },
+  {
+    "id": "little-india-devon",
+    "name": "Little India (Devon Avenue)",
+    "category": "food",
+    "lat": 41.9980,
+    "lng": -87.6900,
+    "description": "South Asian commercial corridor on Devon Avenue in Rogers Park with Indian, Pakistani, and other restaurants and shops.",
+    "address": "W Devon Ave, Rogers Park, Chicago, IL",
+    "tags": ["indian", "south-asian", "food", "neighborhood"]
+  },
+  {
+    "id": "rookery-building",
+    "name": "The Rookery Building",
+    "category": "architecture",
+    "lat": 41.8792,
+    "lng": -87.6318,
+    "description": "Historic 1888 Chicago School skyscraper by Burnham & Root featuring a stunning light court and Frank Lloyd Wright-designed lobby. One of the oldest standing high-rises in Chicago and a National Historic Landmark.",
+    "address": "209 S LaSalle St, Chicago, IL 60604",
+    "tags": ["historic", "architecture", "frank-lloyd-wright"],
+    "recommended": true
+  },
+  {
+    "id": "macys-chicago",
+    "name": "Macy’s Chicago",
+    "category": "shopping",
+    "lat": 41.8837,
+    "lng": -87.6270,
+    "description": "Iconic department store in the historic former Marshall Field’s building on State Street, known for its grand interior, Tiffany mosaic dome, and classic Chicago shopping experience.",
+    "address": "111 N State St, Chicago, IL 60602",
+    "tags": ["shopping", "historic", "landmark"],
+    "recommended": true
+  },
+  {
+    "id": "tiffany-dome",
+    "name": "Tiffany Dome (Chicago Cultural Center)",
+    "category": "landmark",
+    "lat": 41.8837,
+    "lng": -87.6247,
+    "description": "The world’s largest Tiffany glass dome, located inside the Chicago Cultural Center. A free and spectacular architectural highlight featuring intricate Favrile glass design.",
+    "address": "78 E Washington St, Chicago, IL 60602",
+    "tags": ["free", "architecture", "public-art"],
+    "recommended": true
+  },
+  {
+    "id": "harper-memorial-library",
+    "name": "Harper Memorial Library",
+    "category": "architecture",
+    "lat": 41.7895,
+    "lng": -87.5995,
+    "description": "Gothic Revival landmark on the University of Chicago campus. Originally the main library, now a grand study and reading space with soaring interiors often compared to Hogwarts.",
+    "address": "1116 E 59th St, Chicago, IL 60637",
+    "tags": ["gothic", "university", "historic"],
+    "recommended": true
+  },
+  {
+    "id": "offshore-rooftop",
+    "name": "Offshore Rooftop",
+    "category": "entertainment",
+    "lat": 41.8918,
+    "lng": -87.6002,
+    "description": "World’s largest rooftop bar located on Navy Pier, offering panoramic views of Lake Michigan and the Chicago skyline with indoor/outdoor seating, fire pits, and full dining.",
+    "address": "1000 E Grand Ave, Chicago, IL 60611",
+    "tags": ["rooftop", "views", "nightlife"],
+    "recommended": true
+  },
+  {
+    "id": "pequods",
+    "name": "Pequod’s Pizza",
+    "category": "food",
+    "lat": 41.9215,
+    "lng": -87.6645,
+    "description": "Beloved Chicago deep-dish pizza spot famous for its caramelized cheese crust. A local favorite with a casual, no-frills atmosphere.",
+    "address": "2207 N Clybourn Ave, Chicago, IL 60614",
+    "tags": ["deep-dish", "pizza", "local-favorite"],
+    "recommended": true
+  },
+  {
+    "id": "ginos-east",
+    "name": "Gino’s East",
+    "category": "food",
+    "lat": 41.8960,
+    "lng": -87.6230,
+    "description": "Classic Chicago deep-dish pizzeria known for its cornmeal crust and graffiti-covered walls. A longtime tourist and local favorite.",
+    "address": "162 E Superior St, Chicago, IL 60611",
+    "tags": ["deep-dish", "pizza", "iconic"],
+    "recommended": true
+  },
+  {
+    "id": "labriola-ristorante",
+    "name": "Labriola Ristorante & Café",
+    "category": "food",
+    "lat": 41.8945,
+    "lng": -87.6240,
+    "description": "Italian restaurant and café on the Magnificent Mile offering pasta, pizza, and baked goods in a warm, welcoming setting.",
+    "address": "535 N Michigan Ave, Chicago, IL 60611",
+    "tags": ["italian", "pizza", "cafe"],
+    "recommended": true
+  },
+  {
+    "id": "georges-deep-dish",
+    "name": "George’s Deep Dish",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6500,
+    "description": "Neighborhood deep-dish pizza spot known for hearty, classic Chicago-style pies.",
+    "address": "Chicago, IL",
+    "tags": ["deep-dish", "pizza"],
+    "recommended": true
+  },
+  {
+    "id": "pizzamici",
+    "name": "Pizz’amici",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6800,
+    "description": "Cozy pizzeria serving Neapolitan-style and creative pizzas in a casual neighborhood setting.",
+    "address": "Chicago, IL",
+    "tags": ["pizza", "neapolitan"],
+    "recommended": true
+  },
+  {
+    "id": "vito-and-nicks",
+    "name": "Vito & Nick’s Pizzeria",
+    "category": "food",
+    "lat": 41.7500,
+    "lng": -87.7000,
+    "description": "South Side institution famous for thin-crust tavern-style pizza since 1946. A true Chicago classic.",
+    "address": "8433 S Pulaski Rd, Chicago, IL 60652",
+    "tags": ["thin-crust", "pizza", "historic"],
+    "recommended": true
+  },
+  {
+    "id": "zarella-pizzeria",
+    "name": "Zarella Pizzeria",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6700,
+    "description": "Neighborhood pizzeria offering both deep-dish and thin-crust options with a local following.",
+    "address": "Chicago, IL",
+    "tags": ["pizza"],
+    "recommended": true
+  },
+  {
+    "id": "professor-pizza",
+    "name": "Professor Pizza",
+    "category": "food",
+    "lat": 41.8850,
+    "lng": -87.6500,
+    "description": "Modern pizza spot known for inventive toppings and high-quality ingredients in a casual setting.",
+    "address": "Chicago, IL",
+    "tags": ["pizza", "modern"],
+    "recommended": true
+  },
+  {
+    "id": "lou-malnatis",
+    "name": "Lou Malnati’s Pizzeria",
+    "category": "food",
+    "lat": 41.8915,
+    "lng": -87.6270,
+    "description": "One of Chicago’s most famous deep-dish pizza chains, celebrated for its buttery crust and high-quality ingredients. Multiple locations across the city.",
+    "address": "Multiple locations, Chicago, IL",
+    "tags": ["deep-dish", "pizza", "iconic"],
+    "recommended": true
+  },
+  {
+    "id": "spacca-napoli",
+    "name": "Spacca Napoli",
+    "category": "food",
+    "lat": 41.9650,
+    "lng": -87.6600,
+    "description": "Authentic Neapolitan pizzeria with a wood-fired oven, ranked among the best traditional Italian pizzas in Chicago.",
+    "address": "1769 W Sunnyside Ave, Chicago, IL 60640",
+    "tags": ["neapolitan", "pizza", "authentic"],
+    "recommended": true
+  },
+  {
+    "id": "starbucks-reserve-roastery",
+    "name": "Starbucks Reserve Roastery",
+    "category": "food",
+    "lat": 41.8940,
+    "lng": -87.6246,
+    "description": "The world’s largest Starbucks, a multi-level experiential roastery on the Magnificent Mile featuring rare coffees, a cocktail bar, Princi bakery, and interactive roasting experiences.",
+    "address": "646 N Michigan Ave, Chicago, IL 60611",
+    "tags": ["coffee", "experience", "iconic"],
+    "recommended": true
+  },
+  {
+    "id": "mcdonalds-global-menu",
+    "name": "McDonald’s Global Menu Restaurant",
+    "category": "food",
+    "lat": 41.8845,
+    "lng": -87.6245,
+    "description": "Unique McDonald’s location offering international menu items from around the world alongside classic American fare.",
+    "address": "Chicago, IL",
+    "tags": ["fast-food", "unique", "international"],
+    "recommended": true
+  },
+  {
+    "id": "uptown-deli",
+    "name": "Uptown Deli",
+    "category": "food",
+    "lat": 41.9660,
+    "lng": -87.6580,
+    "description": "Neighborhood deli in Uptown serving classic sandwiches, salads, and comfort food favorites.",
+    "address": "Uptown, Chicago, IL",
+    "tags": ["deli", "casual", "neighborhood"],
+    "recommended": true
+  },
+  {
+    "id": "maxwells-trading",
+    "name": "Maxwells Trading",
+    "category": "food",
+    "lat": 41.8850,
+    "lng": -87.6500,
+    "description": "Highly regarded modern American restaurant in West Town known for seasonal, ingredient-driven cuisine and an excellent wine program.",
+    "address": "West Town, Chicago, IL",
+    "tags": ["fine-dining", "seasonal", "modern-american"],
+    "recommended": true
+  },
+  {
+    "id": "nomad-chicago",
+    "name": "Nomad Chicago",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6800,
+    "description": "Specialty coffee shop known for high-quality pour-overs and a relaxed neighborhood atmosphere.",
+    "address": "Chicago, IL",
+    "tags": ["coffee", "specialty"],
+    "recommended": true
+  },
+  {
+    "id": "drip-collective",
+    "name": "Drip Collective",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6750,
+    "description": "Local coffee collective offering carefully sourced beans and expertly crafted espresso drinks.",
+    "address": "Chicago, IL",
+    "tags": ["coffee", "local"],
+    "recommended": true
+  },
+  {
+    "id": "levant-coffee",
+    "name": "Levant Coffee",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6700,
+    "description": "Specialty coffee shop with Middle Eastern influences and a welcoming community vibe.",
+    "address": "Chicago, IL",
+    "tags": ["coffee", "specialty"],
+    "recommended": true
+  },
+  {
+    "id": "sada-coffee",
+    "name": "Sada Coffee Co",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6650,
+    "description": "Independent coffee roaster and café focused on quality beans and thoughtful preparation.",
+    "address": "Chicago, IL",
+    "tags": ["coffee", "roaster"],
+    "recommended": true
+  },
+  {
+    "id": "kasama-cafe",
+    "name": "Kasama",
+    "category": "food",
+    "lat": 41.9105,
+    "lng": -87.6770,
+    "description": "Michelin-starred Filipino restaurant and bakery offering both casual daytime pastries and an elevated tasting menu experience in the evening.",
+    "address": "1001 N Winchester Ave, Chicago, IL 60622",
+    "tags": ["filipino", "michelin", "bakery"],
+    "recommended": true
+  },
+  {
+    "id": "sugar-moon-bakery",
+    "name": "Sugar Moon Bakery",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6800,
+    "description": "Artisan bakery specializing in creative pastries, cakes, and sweet treats.",
+    "address": "Chicago, IL",
+    "tags": ["bakery", "pastries"],
+    "recommended": true
+  },
+  {
+    "id": "mindys-bakery",
+    "name": "Mindy’s Bakery",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6750,
+    "description": "Popular bakery known for high-quality breads, pastries, and seasonal baked goods.",
+    "address": "Chicago, IL",
+    "tags": ["bakery", "bread"],
+    "recommended": true
+  },
+  {
+    "id": "bad-butter",
+    "name": "Bad Butter",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6700,
+    "description": "Creative bakery and café offering unique pastries and butter-focused treats.",
+    "address": "Chicago, IL",
+    "tags": ["bakery", "pastries"],
+    "recommended": true
+  },
+  {
+    "id": "roux",
+    "name": "Roux",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6650,
+    "description": "Neighborhood café and bakery known for comforting baked goods and coffee.",
+    "address": "Chicago, IL",
+    "tags": ["bakery", "cafe"],
+    "recommended": true
+  },
+  {
+    "id": "tillys-bagel",
+    "name": "Tilly’s Bagel",
+    "category": "food",
+    "lat": 41.9100,
+    "lng": -87.6600,
+    "description": "Local bagel shop serving fresh bagels with creative spreads and classic options.",
+    "address": "Chicago, IL",
+    "tags": ["bagels", "breakfast"],
+    "recommended": true
+  },
+  {
+    "id": "amorino",
+    "name": "Amorino",
+    "category": "food",
+    "lat": 41.8940,
+    "lng": -87.6240,
+    "description": "Artisanal gelato shop known for flower-shaped gelato servings made with high-quality ingredients.",
+    "address": "Magnificent Mile area, Chicago, IL",
+    "tags": ["gelato", "dessert"],
+    "recommended": true
+  },
+  {
+    "id": "lincoln-park-conservatory",
+    "name": "Lincoln Park Conservatory",
+    "category": "park",
+    "lat": 41.9235,
+    "lng": -87.6345,
+    "description": "Historic Victorian conservatory in Lincoln Park featuring lush tropical plants, palm house, and seasonal floral displays. Free admission.",
+    "address": "2391 N Stockton Dr, Chicago, IL 60614",
+    "tags": ["free", "gardens", "historic"],
+    "recommended": true
+  },
+  {
+    "id": "lakefront-trail",
+    "name": "Chicago Lakefront Trail",
+    "category": "park",
+    "lat": 41.8800,
+    "lng": -87.6100,
+    "description": "18+ mile continuous path along Lake Michigan perfect for walking, running, and cycling with continuous skyline and lake views.",
+    "address": "Lake Michigan shoreline, Chicago, IL",
+    "tags": ["free", "outdoor", "exercise"],
+    "recommended": true
+  },
+  {
+    "id": "ping-tom-park",
+    "name": "Ping Tom Memorial Park",
+    "category": "park",
+    "lat": 41.8555,
+    "lng": -87.6345,
+    "description": "Scenic park in Chinatown featuring a traditional Chinese pavilion, river views, and open green space along the Chicago River.",
+    "address": "300 W 19th St, Chicago, IL 60616",
+    "tags": ["free", "chinatown", "scenic"],
+    "recommended": true
+  },
+  {
+    "id": "garfield-park-conservatory",
+    "name": "Garfield Park Conservatory",
+    "category": "park",
+    "lat": 41.8863,
+    "lng": -87.7175,
+    "description": "One of the largest and most impressive indoor botanical conservatories in the world, featuring diverse plant collections and free admission.",
+    "address": "300 N Central Park Ave, Chicago, IL 60624",
+    "tags": ["free", "gardens", "botanical"],
+    "recommended": true
+  },
+  {
+    "id": "garden-of-the-phoenix",
+    "name": "Garden of the Phoenix",
+    "category": "park",
+    "lat": 41.7864,
+    "lng": -87.5828,
+    "description": "Serene Japanese garden in Jackson Park with ponds, stone lanterns, arched bridges, and cherry blossoms. Originally created for the 1893 World’s Columbian Exposition.",
+    "address": "6300 S Cornell Ave, Chicago, IL 60637",
+    "tags": ["free", "japanese-garden", "peaceful"],
+    "recommended": true
   }
-]
+];

@@ -47,7 +47,9 @@ export function PlaceDetails({ place, onClose }: PlaceDetailsProps) {
         <span className="place-details__category" style={{ color: category.color }}>
           {category.label}
         </span>
-        <h2 id="place-details-title">{place.name}</h2>
+        <h2 id="place-details-title">
+          {place.name}{place.recommended && <span className="place-details__recommended" title="Developer recommended" aria-label="Developer recommended"> ★</span>}
+        </h2>
         <p className="place-details__description">{place.description}</p>
         {place.address && (
           <div className="place-details__address">

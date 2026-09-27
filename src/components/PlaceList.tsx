@@ -31,7 +31,14 @@ export function PlaceList({ places, selectedId, onSelect, onViewDetails }: Place
             >
               <span className="place-list__dot" style={{ background: meta.color }} />
               <span className="place-list__copy">
-                <span className="place-list__name">{place.name}</span>
+                <span className="place-list__name">
+                  {place.name}
+                  {place.recommended && (
+                    <span className="place-list__recommended" aria-label="Developer recommended" title="Developer recommended">
+                      ★
+                    </span>
+                  )}
+                </span>
                 <span className="place-list__desc">{place.description}</span>
               </span>
             </button>

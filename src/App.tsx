@@ -18,6 +18,8 @@ function App() {
     toggleCategory,
     query,
     setQuery,
+    recommendedOnly,
+    setRecommendedOnly,
     selectedId,
     setSelectedId,
     selectedPlace,
@@ -38,7 +40,12 @@ function App() {
         <h1>Chicago Travel Guide</h1>
         <p className="subtitle">Bookmarked places to explore</p>
         <SearchBar value={query} onChange={setQuery} />
-        <CategoryFilter active={activeCategories} onToggle={toggleCategory} />
+        <CategoryFilter
+          active={activeCategories}
+          onToggle={toggleCategory}
+          recommendedOnly={recommendedOnly}
+          onToggleRecommended={() => setRecommendedOnly((value) => !value)}
+        />
         <PlaceList
           places={places}
           selectedId={selectedId}

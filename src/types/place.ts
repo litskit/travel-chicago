@@ -17,4 +17,5 @@ export interface Place {
   address?: string;
   tags?: string[];
   websiteUrl?: string;
+  recommended?: boolean;
 }

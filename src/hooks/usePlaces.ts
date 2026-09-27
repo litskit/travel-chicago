@@ -8,18 +8,20 @@ export function usePlaces() {
   );
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [recommendedOnly, setRecommendedOnly] = useState(false);
 
   const filteredPlaces = useMemo(() => {
     return places.filter((place) => {
       const matchesCategory =
         activeCategories.size === 0 || activeCategories.has(place.category);
+      const matchesRecommendation = !recommendedOnly || place.recommended === true;
       const matchesQuery =
         query.trim() === "" ||
         place.name.toLowerCase().includes(query.toLowerCase()) ||
         place.tags?.some((tag) => tag.toLowerCase().includes(query.toLowerCase()));
-      return matchesCategory && matchesQuery;
+      return matchesCategory && matchesRecommendation && matchesQuery;
     });
-  }, [activeCategories, query]);
+  }, [activeCategories, query, recommendedOnly]);
 
   const selectedPlace: Place | undefined = places.find((p) => p.id === selectedId);
 
@@ -42,6 +44,8 @@ export function usePlaces() {
     toggleCategory,
     query,
     setQuery,
+    recommendedOnly,
+    setRecommendedOnly,
     selectedId,
     setSelectedId,
     selectedPlace,

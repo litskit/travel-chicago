@@ -108,7 +108,9 @@ export function Map({
           >
             <Popup>
               <div className="map-place-popup">
-                <strong className="map-place-popup__name">{place.name}</strong>
+                <strong className="map-place-popup__name">
+                  {place.name}{place.recommended && <span className="map-place-popup__recommended" title="Developer recommended" aria-label="Developer recommended"> ★</span>}
+                </strong>
                 <p className="map-place-popup__description">{place.description}</p>
                 {place.address && (
                   <p className="map-place-popup__address">{place.address}</p>

@@ -83,6 +83,16 @@
   transition: background 0.15s ease;
 }
 
+.category-chip--recommended {
+  border-color: #d99a00;
+  color: #8a6100;
+}
+
+.category-chip--recommended.category-chip--active {
+  border-color: #b77900;
+  background: #b77900;
+}
+
 .place-list {
   list-style: none;
   margin: 0;
@@ -147,6 +157,13 @@
   margin: 0;
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+.place-list__recommended,
+.map-place-popup__recommended,
+.place-details__recommended {
+  margin-left: 0.35rem;
+  color: #d99a00;
 }
 
 .place-list__desc {
