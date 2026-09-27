@@ -1,0 +1,68 @@
+import "leaflet/dist/leaflet.css";
+import "./App.css";
+import { useState } from "react";
+import { Map } from "./components/Map";
+import { PlaceList } from "./components/PlaceList";
+import { CategoryFilter } from "./components/CategoryFilter";
+import { SearchBar } from "./components/SearchBar";
+import { PlaceDetails } from "./components/PlaceDetails";
+import { usePlaces } from "./hooks/usePlaces";
+import { defaultMapStyle } from "./data/mapStyles";
+import type { Place } from "./types/place";
+
+function App() {
+  const {
+    places,
+    allPlaces,
+    activeCategories,
+    toggleCategory,
+    query,
+    setQuery,
+    selectedId,
+    setSelectedId,
+    selectedPlace,
+  } = usePlaces();
+  const [mapStyleId, setMapStyleId] = useState(defaultMapStyle);
+  const [focusRequest, setFocusRequest] = useState(0);
+  const [detailsPlaceId, setDetailsPlaceId] = useState<string | null>(null);
+  const detailsPlace = allPlaces.find((place: Place) => place.id === detailsPlaceId);
+
+  function selectPlace(id: string) {
+    setSelectedId(id);
+    setFocusRequest((request) => request + 1);
+  }
+
+  return (
+    <div className="app">
+      <aside className="sidebar">
+        <h1>Chicago Travel Guide</h1>
+        <p className="subtitle">Bookmarked places to explore</p>
+        <SearchBar value={query} onChange={setQuery} />
+        <CategoryFilter active={activeCategories} onToggle={toggleCategory} />
+        <PlaceList
+          places={places}
+          selectedId={selectedId}
+          onSelect={selectPlace}
+          onViewDetails={setDetailsPlaceId}
+        />
+      </aside>
+      <main className="map-pane">
+        <Map
+          places={places}
+          selectedPlace={selectedPlace}
+          onSelect={selectPlace}
+          focusRequest={focusRequest}
+          onViewDetails={setDetailsPlaceId}
+          styleId={mapStyleId}
+          onStyleChange={setMapStyleId}
+        />
+      </main>
+      {detailsPlace && (
+        <PlaceDetails place={detailsPlace} onClose={() => setDetailsPlaceId(null)} />
+      )}
+    </div>
+  );
+}
+
+export default App;
+
