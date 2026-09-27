@@ -27,31 +27,48 @@ function App() {
   const [mapStyleId, setMapStyleId] = useState(defaultMapStyle);
   const [focusRequest, setFocusRequest] = useState(0);
   const [detailsPlaceId, setDetailsPlaceId] = useState<string | null>(null);
+  const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
   const detailsPlace = allPlaces.find((place: Place) => place.id === detailsPlaceId);
 
   function selectPlace(id: string) {
     setSelectedId(id);
     setFocusRequest((request) => request + 1);
+    setIsSidebarExpanded(false);
   }
 
   return (
     <div className="app">
-      <aside className="sidebar">
-        <h1>Chicago Travel Guide</h1>
-        <p className="subtitle">Bookmarked places to explore</p>
-        <SearchBar value={query} onChange={setQuery} />
-        <CategoryFilter
-          active={activeCategories}
-          onToggle={toggleCategory}
-          recommendedOnly={recommendedOnly}
-          onToggleRecommended={() => setRecommendedOnly((value) => !value)}
-        />
-        <PlaceList
-          places={places}
-          selectedId={selectedId}
-          onSelect={selectPlace}
-          onViewDetails={setDetailsPlaceId}
-        />
+      <aside className={`sidebar${isSidebarExpanded ? " sidebar--expanded" : " sidebar--collapsed"}`}>
+        <button
+          type="button"
+          className="sidebar__mobile-toggle"
+          aria-expanded={isSidebarExpanded}
+          onClick={() => setIsSidebarExpanded((expanded) => !expanded)}
+        >
+          <span className="sidebar__mobile-grip" aria-hidden="true" />
+          <span className="sidebar__mobile-label">Places</span>
+          <span className="sidebar__mobile-count">{places.length}</span>
+          <span className="sidebar__mobile-chevron" aria-hidden="true">
+            {isSidebarExpanded ? "⌄" : "⌃"}
+          </span>
+        </button>
+        <div className="sidebar__content">
+          <h1>Chicago Travel Guide</h1>
+          <p className="subtitle">Bookmarked places to explore</p>
+          <SearchBar value={query} onChange={setQuery} />
+          <CategoryFilter
+            active={activeCategories}
+            onToggle={toggleCategory}
+            recommendedOnly={recommendedOnly}
+            onToggleRecommended={() => setRecommendedOnly((value) => !value)}
+          />
+          <PlaceList
+            places={places}
+            selectedId={selectedId}
+            onSelect={selectPlace}
+            onViewDetails={setDetailsPlaceId}
+          />
+        </div>
       </aside>
       <main className="map-pane">
         <Map

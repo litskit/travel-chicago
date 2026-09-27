@@ -582,26 +582,6 @@ export const places: Place[] = [
     "tags": ["free", "family", "animals"]
   },
   {
-    "id": "lakefront-trail",
-    "name": "Lakefront Trail",
-    "category": "park",
-    "lat": 41.8800,
-    "lng": -87.6100,
-    "description": "18+ mile paved path along Lake Michigan for walking, running, and biking.",
-    "address": "Lake Michigan shoreline, Chicago, IL",
-    "tags": ["free", "outdoor", "exercise"]
-  },
-  {
-    "id": "garfield-park-conservatory",
-    "name": "Garfield Park Conservatory",
-    "category": "park",
-    "lat": 41.8863,
-    "lng": -87.7175,
-    "description": "One of the largest and most impressive indoor botanical conservatories in the world.",
-    "address": "300 N Central Park Ave, Chicago, IL 60624",
-    "tags": ["free", "nature", "gardens"]
-  },
-  {
     "id": "the-606",
     "name": "The 606 (Bloomingdale Trail)",
     "category": "park",
@@ -650,26 +630,6 @@ export const places: Place[] = [
     "description": "Nature preserve and former airport site offering lake views and trails.",
     "address": "1521 S Linn White Dr, Chicago, IL 60605",
     "tags": ["free", "nature", "views"]
-  },
-  {
-    "id": "ping-tom-park",
-    "name": "Ping Tom Memorial Park",
-    "category": "park",
-    "lat": 41.8555,
-    "lng": -87.6345,
-    "description": "Park in Chinatown featuring a traditional Chinese gateway and river views.",
-    "address": "300 W 19th St, Chicago, IL 60616",
-    "tags": ["free", "neighborhood", "scenic"]
-  },
-  {
-    "id": "magnificent-mile",
-    "name": "Magnificent Mile",
-    "category": "shopping",
-    "lat": 41.8960,
-    "lng": -87.6245,
-    "description": "Premier shopping district along Michigan Avenue with flagship stores and landmarks.",
-    "address": "N Michigan Ave, Chicago, IL",
-    "tags": ["shopping", "iconic", "luxury"]
   },
   {
     "id": "state-street",
